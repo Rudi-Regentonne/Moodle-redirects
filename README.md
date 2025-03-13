@@ -34,7 +34,7 @@ Diese Extension hilft dabei, die Seite [Moodle DHBW](https://moodle.dhbw.de) aut
 
 - Die Extension wird automatisch aktiviert, sobald die richtige Seite besucht wird. Sie leitet dich direkt auf die gewünschte Moodle-Seite weiter.
 - Du kannst auch die entsprechende Datei anpassen, um die Redirect-Logik nach deinen Bedürfnissen zu ändern.
-
+- In der Chrome Variante hat man fünf Sekunden Zeit um eine Taste zu drücken, da die Passwörter nicht von selbst ausgefüllt werden. 
 ---
 
 
