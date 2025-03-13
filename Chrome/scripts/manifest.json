@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Moodle Redirects",
+    "version": "1.0",
+  
+    "description": "Redirects moodle.dhbw.de to https://moodle.dhbw.de/my/courses.php and automates the login",
+  
+    "icons": {
+      "48": "icons/obelix.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://moodle.dhbw.de/"],
+        "js": ["moodle.js"]
+      },
+      {
+        "matches": ["https://moodle.dhbw.de/my/courses.php"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://moodle.dhbw.de/simplesaml/module.php/multiauth/discovery?*"],
+      "js": ["loginRedirect.js"],
+      "run_at": "document_idle"
+  },
+  {
+    "matches": ["https://moodle.dhbw.de/simplesaml/module.php/core/loginuserpassorg?*"],
+    "js": ["login.js"],
+    "run_at": "document_idle"
+}
+    ]
+  }
+  
