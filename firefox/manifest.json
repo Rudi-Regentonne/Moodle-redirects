@@ -12,25 +12,30 @@
   "content_scripts": [
     {
       "matches": ["*://moodle.dhbw.de/"],
-      "js": ["moodle.js"]
+      "js": ["scripts/moodle_redirect.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://moodle.dhbw.de/*"],
+      "js": ["scripts/replaceHref.js"]
     },
     {
       "matches": ["https://moodle.dhbw.de/my/courses.php"],
-      "js": ["content.js"],
+      "js": ["scripts/courses.js"],
       "run_at": "document_idle"
     },
     {
       "matches": [
         "https://moodle.dhbw.de/simplesaml/module.php/multiauth/discovery?*"
       ],
-      "js": ["loginRedirect.js"],
+      "js": ["scripts/loginRedirect.js"],
       "run_at": "document_idle"
     },
     {
       "matches": [
         "https://moodle.dhbw.de/simplesaml/module.php/core/loginuserpassorg?*"
       ],
-      "js": ["login.js"],
+      "js": ["scripts/login.js"],
       "run_at": "document_idle"
     }
   ]

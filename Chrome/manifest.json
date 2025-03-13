@@ -11,12 +11,17 @@
 
   "content_scripts": [
     {
-      "matches": ["*://moodle.dhbw.de/*"],
-      "js": ["scripts/moodle.js"]
+      "matches": ["*://moodle.dhbw.de/"],
+      "js": ["scripts/moodle_redirect.js"]
     },
     {
-      "matches": ["https://moodle.dhbw.de/my/courses.php"],
-      "js": ["scripts/content.js"],
+      "matches": ["https://moodle.dhbw.de/*"],
+      "js": ["scripts/replaceHref.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://moodle.dhbw.de/my/courses.php", "https://moodle.dhbw.de/my/courses.php?redirected=true"],
+      "js": ["scripts/courses.js"],
       "run_at": "document_idle"
     },
     {
