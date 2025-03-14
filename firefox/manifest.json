@@ -6,7 +6,7 @@
   "description": "Redirects moodle.dhbw.de to https://moodle.dhbw.de/my/courses.php and automates the login",
 
   "icons": {
-    "48": "icons/obelix.png"
+    "48": "icons/logo.png"
   },
 
   "content_scripts": [
