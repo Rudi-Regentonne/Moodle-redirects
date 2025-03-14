@@ -13,7 +13,7 @@ Moodle-Redirects für die DHBW Karlsruhe als Browser-Extension
 ### **1. Firefox-Extension installieren**
 
 #### **Automatische Installation**
-Die Extension kann über [diesen Link](https://addons.mozilla.org/firefox/downloads/file/4454273/59dd0869e20f43a1b0d4-1.0.xpi) installiert werden.
+Die Extension kann über [diesen Link](https://addons.mozilla.org/firefox/downloads/file/4454722/59dd0869e20f43a1b0d4-1.1.xpi) installiert werden.
 
 #### **Manuelle Installation über das Debugging-Panel**
 1. **Firefox öffnen** und `about:debugging` in die Adresszeile eingeben.
