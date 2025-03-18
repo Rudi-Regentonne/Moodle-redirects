@@ -27,18 +27,19 @@ Die Extension kann über [diesen Link](https://addons.mozilla.org/firefox/downlo
 ### **2. Chrome-Extension installieren**
 
 #### **Automatische Installation**
-Die Extension kann mit der [.crx-Datei](chrome/chrome.crx) installiert werden.  
+Da man für eine Chrome Developer Anmeldung 5$ bezahlen muss, gibt es hier nur die manuelle Version
 
 #### **Manuelle Installation im Entwicklermodus**
 1. **Chrome öffnen** und `chrome://extensions/` in die Adresszeile eingeben.
 2. Entwicklermodus oben rechts aktivieren.
 3. **"Entpackte Erweiterung laden"** anklicken.
 4. Zum Ordner navigieren, der die Chrome-Version der Extension enthält.
-5. Den Ordner mit der `manifest.json` Datei auswählen.
 6. Die Extension wird nun in Chrome installiert und aktiviert.
-
-**⚠️ Hinweis:**  
-Falls die `.crx`-Datei verwendet wird, muss sie per **Drag & Drop in die Erweiterungen-Seite** (`chrome://extensions/`) gezogen werden.
+#### Um die Extension richtig zu installieren muss man sie noch packen und laden.
+1. auf "pack Extension" clicken
+2. den gleichen Ordner wie vorher angeben
+3. das Zertifikat kann leer bleiben
+4. die gepackte `.crx`-Datei per **Drag & Drop in die Erweiterungen-Seite** (`chrome://extensions/`) ziehen. 
 
 ---
 
